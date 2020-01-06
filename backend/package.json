@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.8.4",
+    "morgan": "^1.9.1",
     "nodemon": "^2.0.2"
   },
   "scripts": {
