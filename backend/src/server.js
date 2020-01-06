@@ -7,11 +7,13 @@ const morgan = require('morgan');
 const app = express();
 const bodyparser = require('body-parser');
 const port = 3333;
+const cors = require('cors');
 
 morgan('combined');
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
+app.use(cors());
 
 mongoose.connect(
   'mongodb+srv://fezinho11:123felao@cluster0-mtv2i.mongodb.net/weed?retryWrites=true&w=majority',

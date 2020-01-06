@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+
+header.container {
+  margin: 0 auto;
+}
+
+header.container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  list-style: none;
+  font-size: 18px;
+  color: black;
+}
+
+header.container .navbar img {
+  width: 100px;
+  height: 100px;
+}
