@@ -7,7 +7,7 @@ api.test = function(req, res) {
   weed.name = req.body.name;
   weed.save(function(error) {
     if (error) {
-      res.send(error);
+      res.send('error');
     } else {
       res.send('saved');
     }
