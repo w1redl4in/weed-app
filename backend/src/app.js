@@ -1,18 +1,15 @@
-// const express = require('express');
-// const mongoose = require('mongoose');
-// const routes = require('../src/routes');
-// const morgan = require('morgan');
-// const app = express();
-// const bodyparser = require('body-parser');
-// morgan('combined');
 
-// app.use(bodyparser.urlencoded({ extended: true }));
-// app.use(bodyparser.json());
+const express = require('express');
+const bodyparser = require('body-parser');
+const cors = require('cors');
+const db = require('../src/database') // just to initialize
+const app = express();
+const routes = require('../src/routes');
 
-// // mongoose.connect(
-// //   'mongodb+srv://fezinho11:123felao@cluster0-mtv2i.mongodb.net/test?retryWrites=true&w=majority',
-// //   { useNewUrlParser: true, useUnifiedTopology: true },
-// //   () => console.log(`MongoDB is working!`)
-// // );
+app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyparser.json());
+app.use(cors());
 
-// module.exports = routes(app);
+app.use('/', routes)
+
+module.exports = app;
