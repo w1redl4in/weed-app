@@ -14,7 +14,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
 mongoose.connect(
-  'mongodb+srv://fezinho11:123felao@cluster0-mtv2i.mongodb.net/test?retryWrites=true&w=majority',
+  'mongodb+srv://fezinho11:123felao@cluster0-mtv2i.mongodb.net/weed?retryWrites=true&w=majority',
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log(`MongoDB is working!`)
 );
