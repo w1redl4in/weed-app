@@ -5,20 +5,16 @@ import "./index.css";
 
 const Header = () => {
   return (
-    <>
-      <header className="container">
-        <ul className="navbar">
-          <Link to="/">
-            <img src={logo} />
-          </Link>
-          <Link to="/weeds">
-            <li>WEEDS</li>
-          </Link>
-          <li>ABOUT US</li>
-          <li>CONTACT</li>
-        </ul>
-      </header>
-    </>
+    <div className="container">
+      <img src={logo} alt="maconha" />
+      <Link to="/weeds" style={{ textDecoration: "none", color: "white" }}>
+        <h1>WEEDS</h1>
+      </Link>
+      <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+        <h2>HOME</h2>
+      </Link>
+      <h3>ABOUT US</h3>
+    </div>
   );
 };
 

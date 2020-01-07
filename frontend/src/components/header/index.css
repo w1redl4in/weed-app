@@ -1,20 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
-
-header.container {
-  margin: 0 auto;
+div .container {
+  text-align: center;
+  color: #fff;
 }
 
-header.container .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  list-style: none;
-  font-size: 18px;
-  color: black;
-}
-
-header.container .navbar img {
+img {
+  margin-top: 80px;
   width: 100px;
   height: 100px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 150px;
+  font-size: 56px;
+}
+
+header {
+  border-bottom: 1px solid #dddddd;
+  height: 72px;
+}
+
+header .navbar .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar .list li {
+  background-color: red;
+  width: 20%;
+  list-style-type: none;
+  font-size: 24px;
+  margin: 20px auto;
+  font-weight: 600;
 }

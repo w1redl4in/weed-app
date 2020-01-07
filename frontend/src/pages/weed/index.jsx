@@ -8,23 +8,18 @@ export default class Weed extends Component {
   };
 
   async componentDidMount() {
-    const response = await api.get("getAll");
+    const response = await api.get("weeds");
     this.setState({ weeds: response.data });
+    console.log(this.weeds);
   }
 
   render() {
     return this.state.weeds.map(weed => (
       <section id={weed._id} className="weed-list">
         <div className="weed-info">
-          <h1>{weed.name}</h1>
+          <p>{weed.name}</p>
         </div>
-        <img
-          src="https://en.seedfinder.eu/pics/01seeds/SubCools_The_Dank/SubCools_The_Dank_-_Astroboy_thumb.jpg"
-          alt="weed"
-        />
-        <footer>
-          <p>{weed.batata}</p>
-        </footer>
+        <p>{weed.batata}</p>
       </section>
     ));
   }
