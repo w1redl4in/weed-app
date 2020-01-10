@@ -1,4 +1,4 @@
-const api = require('../src/controllers/weedController');
+const api = require('./controllers/WeedController');
 const express = require('express');
 const router = express.Router();
 const uploadConfig = require('./config/upload');

@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 
 const WeedSchema = new mongoose.Schema({
   image: String,
-  name: String,
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   description: String,
 });
 

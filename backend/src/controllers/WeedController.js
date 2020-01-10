@@ -1,4 +1,4 @@
-const Weed = require('../models/weed');
+const Weed = require('../models/Weed');
 const sharp = require('sharp');
 const path = require('path');
 const fs = require('fs');
