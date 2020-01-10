@@ -48,6 +48,23 @@ h1::after {
   margin-bottom: 100px;
 }
 
+h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 46px;
+  color: #027c6b;
+}
+
+h3::after {
+  content: "";
+  width: 250px;
+  background: currentColor;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -101,7 +118,7 @@ h1::after {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 500px;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 10px;
   min-width: 200px;
@@ -137,4 +154,25 @@ h1::after {
     flex: 1 0 200px;
     margin: 0 20px;
   }
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.grid3-item:nth-child(1) {
+  grid-row: 1/2;
+}
+
+.grid3-item2 {
+  height: 100px;
+  width: 200px;
+}
+
+.grid3-item3 {
+  height: 100px;
+  width: 200px;
 }

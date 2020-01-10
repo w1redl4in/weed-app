@@ -7,6 +7,8 @@ import weed3 from "./assets/weed3.jpeg";
 import weed4 from "./assets/weed4.jpg";
 import weed5 from "./assets/weed5.jpeg";
 import weed6 from "./assets/weed6.jpg";
+import weed7 from "./assets/weed7.jpg";
+import weed8 from "./assets/weed8.jpg";
 import cannabis from "./assets/cannabis_faz_bem.jpg";
 
 function App() {
@@ -143,6 +145,40 @@ function App() {
             <img src={weed6} alt="weed" />
             <h2>Weed 6</h2>
           </div>
+        </div>
+      </section>
+
+      <h3>Noticias 2</h3>
+
+      <section className="grid3">
+        <div className="grid3-item">
+          <img src={weed8} alt="weed" />
+          <p>Nome da maconha</p>
+        </div>
+
+        <div className="grid3-item2">
+          <img src={weed7} alt="weed" />
+          <p>Nome da maconha</p>
+        </div>
+
+        <div className="grid3-item3">
+          <img src={weed7} alt="weed" />
+          <p>Nome da maconha</p>
+        </div>
+
+        <div className="grid3-item2">
+          <img src={weed7} alt="weed" />
+          <p>Nome da maconha</p>
+        </div>
+
+        <div className="grid3-item2">
+          <img src={weed7} alt="weed" />
+          <p>Nome da maconha</p>
+        </div>
+
+        <div className="grid3-item2">
+          <img src={weed7} alt="weed" />
+          <p>Nome da maconha</p>
         </div>
       </section>
     </div>
