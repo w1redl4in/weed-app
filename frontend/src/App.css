@@ -31,6 +31,24 @@ i {
   font-size: 14px;
 }
 
+.faixa {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2a2a2c;
+  height: 250px;
+  width: 100%;
+  margin-bottom: -70px;
+}
+
+.faixa > div {
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  background-color: #f49e00;
+}
+
 h1 {
   margin-top: 60px;
   text-align: center;
@@ -48,8 +66,25 @@ h1::after {
   margin-bottom: 100px;
 }
 
+h5 {
+  margin-top: 260px;
+  text-align: center;
+  font-size: 46px;
+  color: #027c6b;
+}
+
+h5::after {
+  content: "";
+  width: 250px;
+  background: currentColor;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
 h3 {
-  margin-top: 60px;
+  margin-top: 250px;
   text-align: center;
   font-size: 46px;
   color: #027c6b;
@@ -118,11 +153,11 @@ h3::after {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  padding: 10px;
-  min-width: 200px;
-  margin: 0 auto;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  max-width: 900px;
+  margin: -50px auto;
+  margin-bottom: 200px;
 }
 
 .grid p {
@@ -136,23 +171,9 @@ h3::after {
   text-align: center;
 }
 
-.sidebar > div {
-  margin-bottom: 10px;
-}
-
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-  .sidebar {
-    display: flex;
-    overflow: scroll;
-    margin-right: 20px;
-  }
-
-  .sidebar > div {
-    flex: 1 0 200px;
-    margin: 0 20px;
   }
 }
 
@@ -161,7 +182,8 @@ h3::after {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   max-width: 40rem;
-  margin: 0 auto;
+  margin: -50px auto;
+  margin-bottom: 400px;
 }
 .grid3-item:nth-child(1) {
   grid-row: 1/2;
@@ -175,4 +197,13 @@ h3::after {
 .grid3-item3 {
   height: 100px;
   width: 200px;
+}
+
+.footer {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  font-size: 18px;
+  justify-content: center;
+  background-color: white;
 }

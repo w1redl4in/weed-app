@@ -88,7 +88,13 @@ function App() {
         </div>
       </section>
 
-      <h1>Notícias</h1>
+      <div className="faixa">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <h5>News</h5>
 
       <section className="grid">
         <div className="main-noticia">
@@ -114,41 +120,15 @@ function App() {
             estudo.
           </p>
         </div>
-
-        <div className="sidebar">
-          <div>
-            <img src={weed1} alt="weed" />
-            <h2>Weed 1</h2>
-          </div>
-
-          <div>
-            <img src={weed2} alt="weed" />
-            <h2>Weed 2</h2>
-          </div>
-
-          <div>
-            <img src={weed3} alt="weed" />
-            <h2>Weed 3</h2>
-          </div>
-
-          <div>
-            <img src={weed4} alt="weed" />
-            <h2>Weed 4</h2>
-          </div>
-
-          <div>
-            <img src={weed5} alt="weed" />
-            <h2>Weed 5</h2>
-          </div>
-
-          <div>
-            <img src={weed6} alt="weed" />
-            <h2>Weed 6</h2>
-          </div>
-        </div>
       </section>
 
-      <h3>Noticias 2</h3>
+      <div className="faixa">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <h3>Shop</h3>
 
       <section className="grid3">
         <div className="grid3-item">
@@ -181,6 +161,11 @@ function App() {
           <p>Nome da maconha</p>
         </div>
       </section>
+      <footer className="footer">
+        <div>
+          <span>Copyright © 2020, Brasil. All Rights Reserved.</span>
+        </div>
+      </footer>
     </div>
   );
 }
