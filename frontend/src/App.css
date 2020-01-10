@@ -36,17 +36,16 @@ i {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #2a2a2c;
+  background-color: white;
   height: 250px;
   width: 100%;
   margin-bottom: -70px;
 }
 
 .faixa > div {
-  height: 100px;
-  border-radius: 50%;
-  width: 100px;
-  background-color: #f49e00;
+  height: 2px;
+  width: 70px;
+  background-color: #1d1e20;
 }
 
 h1 {
