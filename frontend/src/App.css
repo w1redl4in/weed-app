@@ -1,27 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
 * {
   outline: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+  list-style: none;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-
-html,
-body,
-#root {
-  min-height: 100%;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-body {
-  background: url("./assets/felipenojentoi.jpg");
-  background-size: cover;
-  -webkit-font-smoothing: antialiased !important;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-body,
-input,
-button {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+i {
+  color: #023d35;
+  line-height: 10px;
+  margin-top: 10px;
   font-size: 14px;
+}
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 46px;
+  color: #027c6b;
+}
+
+h1::after {
+  content: "";
+  width: 250px;
+  background: currentColor;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1d1e20;
+  padding: 20px 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.menu li a {
+  padding: 0 20px;
+  display: block;
+}
+
+.menu li a::after {
+  content: "";
+  display: block;
+  background: currentColor;
+  width: 20px;
+  height: 2px;
+  transition: all 0.5s;
+  margin: 2px auto;
+}
+
+.menu li a:hover::after {
+  width: 100px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex > div {
+  flex: 1 1 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-gap: 30px;
+  padding: 10px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.grid p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid h2 {
+  padding: 10px;
+  color: #023d35;
+  text-align: center;
+}
+
+.sidebar > div {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: flex;
+    overflow: scroll;
+    margin-right: 20px;
+  }
+
+  .sidebar > div {
+    flex: 1 0 200px;
+    margin: 0 20px;
+  }
 }
