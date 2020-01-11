@@ -1,0 +1,23 @@
+i {
+  color: #023d35;
+  line-height: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 46px;
+  color: #027c6b;
+}
+
+h1::after {
+  content: "";
+  width: 250px;
+  background: currentColor;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}

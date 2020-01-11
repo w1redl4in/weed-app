@@ -1,14 +1,11 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Weed from "./pages/weed";
-import Header from "./components/header";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const Routes = () => {
   return (
-    <Switch>
-      <Route path="/" exact component={Header} />
-      <Route path="/weeds" component={Weed} />
-    </Switch>
+    <BrowserRouter>
+      <Switch></Switch>
+    </BrowserRouter>
   );
 };
 
