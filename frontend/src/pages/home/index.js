@@ -52,7 +52,7 @@ const Home = () => {
         <div>
           <img src={weed2} alt="weed" />
           <h2>Weed 1</h2>
-          <i>
+          <i className="last-i">
             Blue Dream, a sativa-dominant hybrid originating in California, has
             achieved legendary status among West Coast strains. Crossing
             Blueberry with Haze, Blue Dream balances full-body relaxation with
@@ -94,11 +94,13 @@ const Home = () => {
         </div>
       </section>
 
+      <Slider />
+
       <h3>Shop</h3>
 
       <section className="grid3">
         <div className="grid3-item">
-          <img src={weed8} alt="weed" />
+          <img src={weed7} alt="weed" />
           <p>Nome da maconha</p>
         </div>
 

@@ -75,7 +75,7 @@ h5::after {
 }
 
 h3 {
-  margin-top: 250px;
+  margin-top: 350px;
   text-align: center;
   font-size: 46px;
   color: #027c6b;
@@ -102,13 +102,15 @@ h3::after {
 
 .grid p {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .grid h2 {
   padding: 10px;
   color: #023d35;
   text-align: center;
+  font-size: 26px;
+  margin-top: 50px;
 }
 
 @media (max-width: 600px) {
@@ -122,8 +124,9 @@ h3::after {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   max-width: 40rem;
-  margin: -50px auto;
+  margin: -40px auto;
   margin-bottom: 400px;
+  text-align: center;
 }
 .grid3-item:nth-child(1) {
   grid-row: 1/2;
