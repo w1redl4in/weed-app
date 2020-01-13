@@ -1,0 +1,16 @@
+.faixa {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 250px;
+  width: 100%;
+  margin-bottom: -70px;
+}
+
+.faixa > div {
+  height: 2px;
+  width: 70px;
+  background-color: #1d1e20;
+}
