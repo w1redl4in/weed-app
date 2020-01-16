@@ -6,9 +6,11 @@ import logo from "../../assets/logo.png";
 const Header = () => {
   return (
     <header className="header">
+      <label for="toggle">&#9776;</label>
       <Link to="/">
         <img src={logo} alt="logo" className="logo" />
       </Link>
+      <input type="checkbox" id="toggle" />
       <div>
         <ul className="menu">
           <li>

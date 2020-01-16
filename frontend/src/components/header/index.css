@@ -45,3 +45,43 @@ a {
 .menu li a:hover::after {
   width: 100px;
 }
+
+label,
+#toggle {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  .logo,
+  .menu {
+    display: none;
+  }
+
+  .menu li a {
+    color: white;
+    font-size: 14px;
+    display: block;
+  }
+
+  .header {
+    height: 90px;
+  }
+
+  label {
+    transition: all 2s;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu li a:hover::after {
+    width: 70px;
+  }
+
+  #toggle:checked + div > .menu {
+    transition-delay: 2s;
+    display: flex;
+  }
+}
