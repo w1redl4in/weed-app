@@ -1,0 +1,20 @@
+.grid-strains {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.grid-strains > div {
+  text-align: left;
+}
+
+.grid-strains > div:last-child {
+  height: 500px;
+}
+
+.strains-imgs {
+  width: 200px;
+  height: 200px;
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import weed4 from "../../assets/weed4.jpg";
-import weed2 from "../../assets/weed2.jpg";
-import weed6 from "../../assets/weed6.jpg";
-import weed7 from "../../assets/weed7.jpg";
-import weed8 from "../../assets/weed8.jpg";
-import cannabis from "../../assets/cannabis_faz_bem.jpg";
+import weed4 from "../../assets/home/weed4.jpg";
+import weed2 from "../../assets/home/weed2.jpg";
+import weed6 from "../../assets/home/weed6.jpg";
+import weed7 from "../../assets/home/weed7.jpg";
+import cannabis from "../../assets/home/cannabis_faz_bem.jpg";
 import Slider from "../../components/faixa";
 import Header from "../../components/header";
+import Footer from "../../components/footer";
 import "./index.css";
 
 const Home = () => {
@@ -129,11 +129,7 @@ const Home = () => {
           <p>Nome da maconha</p>
         </div>
       </section>
-      <footer className="footer">
-        <div>
-          <span>Copyright © 2020, Brasil. All Rights Reserved.</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
